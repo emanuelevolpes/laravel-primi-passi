@@ -18,5 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/pippo', function () {
-    return view('pippo');
+    $data = [
+        'title' => 'Titolo della Pippo page'
+    ];
+
+    return view('pippo', $data);
 });

@@ -21,6 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1 class="text-center">Ciao sono la Pippo page!</h1>
+        <h1 class="text-center">{{ $title }}</h1>
     </body>
 </html>
