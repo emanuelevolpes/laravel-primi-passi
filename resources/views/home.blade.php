@@ -21,7 +21,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1 class="text-center">Hello World!</h1>
+        <h1 class="text-center">{{ $title }}</h1>
         <nav class="text-center">
             <a href="/pippo">Pippo</a>
         </nav>

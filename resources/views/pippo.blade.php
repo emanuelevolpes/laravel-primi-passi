@@ -21,6 +21,10 @@
         </style>
     </head>
     <body class="antialiased">
-        <h1 class="text-center">{{ $title }}</h1>
+        <div class="text-center">
+        <h1>{{ $title }}</h1>
+        <h2>{{ $subtitle }}</h2>
+        <p>{{ $paragraph }}</p>
+        </div>
     </body>
 </html>

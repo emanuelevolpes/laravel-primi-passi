@@ -14,12 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $title = 'Hello Laravel!';
+
+    return view('home', compact('title'));
 });
 
 Route::get('/pippo', function () {
     $data = [
-        'title' => 'Titolo della Pippo page'
+        'title' => 'Titolo della Pippo page',
+        'subtitle' => 'Sottotitolo della Pippo page',
+        'paragraph' => 'Paragrafo della Pippo page'
     ];
 
     return view('pippo', $data);
